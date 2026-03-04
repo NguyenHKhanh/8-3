@@ -48,6 +48,7 @@ body, html {
     display: block;
     -webkit-user-drag: none;
     user-select: none;
+    -webkit-touch-callout: none;
 }
 
 .base-layer {
@@ -250,4 +251,5 @@ transition: all 0.3s ease;
     font-size: 25px;
     cursor: pointer;
 }
+
 
