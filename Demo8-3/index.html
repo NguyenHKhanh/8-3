@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Women's Day</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="container">
+            <div class="image-wrapper">
+                <img src="anh/background.png" class="responsive-image base-layer" alt="Bg">
+                <img src="anh/house.png" class="responsive-image house" alt="House" id="">
+                <img src="anh/boy.png" class="responsive-image boy" alt="Boy" id="openModal">            
+                <div id="myModal" class="modal-overlay">
+                    <div class="modal-content">
+                        <span class="close-modal-btn">&times;</span>
+                        <h3></h3>
+                        <p>Chào mừng bạn! Đây là ô thoại hiện lên khi bạn tương tác với trang web.</p>
+                        <button class="ok-btn">Tuyệt vời!</button>
+                    </div>
+                </div>
+                <img src="anh/mailbox.png" class="responsive-image mailbox" alt="Mailbox" id="mailbox">
+                <div id="letterWrapper" class="letter-overlay">
+                    <div class="letter-content">
+                        <span class="close-letter-btn">&times;</span>
+                        <div class="letter-text">
+                            <h2>Gửi bạn thân mến,</h2>
+                            <p> Chúc bạn có một ngày thật nhiều niềm vui và bình yên bên ngôi nhà nhỏ của mình. 🌸</p>
+                            <p style="text-align: right;">— Từ Gemini —</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>      
+        <audio id="bgMusic" loop>
+                <source src="anh/nhac.mp3" type="audio/mpeg" volume="0.5">
+        </audio>
+        <div id="musicControl" class="music-btn">
+            <span id="musicIcon">🔇</span>
+        </div>
+        
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
