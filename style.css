@@ -6,7 +6,8 @@ body, html {
     background-image: url('anh/cover.avif');
     background-size: auto;
     background-position: center;
-    
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .main{
@@ -244,3 +245,4 @@ transition: all 0.3s ease;
     font-size: 25px;
     cursor: pointer;
 }
+
