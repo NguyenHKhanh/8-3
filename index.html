@@ -4,34 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Women's Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Courgette&family=Dancing+Script&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">  
 </head>
 <body>
+    <!-- DOOR LOGIN -->
+    <!-- LOGIN SCREEN -->
+<div id="loginScreen">
+  <div class="door-container">
+
+    <!-- 2 CÁNH CỬA -->
+    <div class="door left-door"></div>
+    <div class="door right-door"></div>
+
+    <!-- LOGIN BOX -->
+    <div class="login-box">
+        <div class="login-box-inner">
+            <div class="login-left"> 
+            <img src="anh/login.avif" alt="Love" class="login-avatar">
+            </div>
+            <div class="login-right">
+                <p>Nhập mật khẩu đi bé iu💗</p>
+
+                <div class="pin-display" id="pinDisplay">••••</div>
+
+                <div class="pin-pad">
+                    <button class="pin-btn">1</button>
+                    <button class="pin-btn">2</button>
+                    <button class="pin-btn">3</button>
+                    <button class="pin-btn">4</button>
+                    <button class="pin-btn">5</button>
+                    <button class="pin-btn">6</button>
+                    <button class="pin-btn">7</button>
+                    <button class="pin-btn">8</button>
+                    <button class="pin-btn">9</button>
+                    <button class="pin-btn clear">C</button>
+                    <button class="pin-btn">0</button>
+                    <button class="pin-btn delete">⌫</button>
+                </div>
+
+                <p id="errorMsg"></p>
+            </div>
+        </div>
+    </div>  
+  </div>
+</div>
+
+    <!-- MAIN CONTENT -->
     <div class="main" id="main">
         <div class="container">
             <div class="image-wrapper">
                 <img src="anh/background.png" class="responsive-image base-layer" alt="Bg">
-                <img src="anh/house.png" class="responsive-image house" alt="House" id="">
-                <img src="anh/boy.png" class="responsive-image boy" alt="Boy" id="openModal">            
-                <div id="myModal" class="modal-overlay">
-                    <div class="modal-content">
-                        <span class="close-modal-btn">&times;</span>
-                        <h3></h3>
-                        <p>Chào mừng bạn! Đây là ô thoại hiện lên khi bạn tương tác với trang web.</p>
-                        <button class="ok-btn">Tuyệt vời!</button>
-                    </div>
-                </div>
+                <img src="anh/house.png" class="responsive-image house" alt="House" id="openGalleryBtn">
+                <img src="anh/boy.png" class="responsive-image boy" alt="Boy" id="openLove">                           
                 <img src="anh/mailbox.png" class="responsive-image mailbox" alt="Mailbox" id="mailbox">
                 <div id="letterWrapper" class="letter-overlay">
                     <div class="letter-content">
                         <span class="close-letter-btn">&times;</span>
                         <div class="letter-text">
-                            <h2>Gửi bạn thân mến,</h2>
-                            <p> Chúc bạn có một ngày thật nhiều niềm vui và bình yên bên ngôi nhà nhỏ của mình. 🌸</p>
-                            <p style="text-align: right;">— Từ Gemini —</p>
+                            <h2 class="letter-title">To my dearest love,</h2>
+                            <div id="typed-text"></div>                            
+                            <p style="text-align: right;">— From H Khanh —</p>
                         </div>
                     </div>
                 </div>
+                <div id="galleryOverlay" class="gallery-overlay">
+                    <span id="closeGallery" class="close-gallery">&times;</span>
+                    <div class="heart-container" id="heartContainer"></div>  
+                        <div class="photo-marquee">
+
+                    <div class="photo-row">
+                    <div class="photo-track">
+                        <img src="anh/img1.jpg">
+                        <img src="anh/img2.jpg">
+                        <img src="anh/img3.jpg">
+                        <img src="anh/img4.jpg">
+                        <img src="anh/img1.jpg">
+                        <img src="anh/img2.jpg">
+                        <img src="anh/img3.jpg">
+                        <img src="anh/img4.jpg">
+                        <img src="anh/img1.jpg">
+                        <img src="anh/img2.jpg">
+                        <img src="anh/img3.jpg">
+                        <img src="anh/img4.jpg">
+                    </div>
+                    </div>
+
+                    <div class="photo-row reverse">
+                    <div class="photo-track">
+                        <img src="anh/img5.jpg">
+                        <img src="anh/img6.jpg">
+                        <img src="anh/img7.jpg">
+                        <img src="anh/img8.jpg">
+                        <img src="anh/img5.jpg">
+                        <img src="anh/img6.jpg">
+                        <img src="anh/img7.jpg">
+                        <img src="anh/img8.jpg">
+                        <img src="anh/img5.jpg">
+                        <img src="anh/img6.jpg">
+                        <img src="anh/img7.jpg">
+                        <img src="anh/img8.jpg">
+                    </div>
+                    </div>
+
+                    <div class="photo-row">
+                    <div class="photo-track">
+                        <img src="anh/img9.jpg">
+                        <img src="anh/img10.jpg">
+                        <img src="anh/img11.jpg">
+                        <img src="anh/img12.jpg">
+                        <img src="anh/img9.jpg">
+                        <img src="anh/img10.jpg">
+                        <img src="anh/img11.jpg">
+                        <img src="anh/img12.jpg">
+                        <img src="anh/img9.jpg">
+                        <img src="anh/img10.jpg">
+                        <img src="anh/img11.jpg">
+                        <img src="anh/img12.jpg">
+                    </div>
+                    </div>
+
+                    <div class="photo-row reverse">
+                    <div class="photo-track">
+                        <img src="anh/img13.jpg">
+                        <img src="anh/img14.jpg">
+                        <img src="anh/img15.jpg">
+                        <img src="anh/img16.jpg">
+                        <img src="anh/img13.jpg">
+                        <img src="anh/img14.jpg">
+                        <img src="anh/img15.jpg">
+                        <img src="anh/img16.jpg">
+                        <img src="anh/img13.jpg">
+                        <img src="anh/img14.jpg">
+                        <img src="anh/img15.jpg">
+                        <img src="anh/img16.jpg">
+                    </div>
+                    </div>
+
+                        </div>
+                        <div id="imagePopup" class="image-popup">
+                        <span class="close-popup">&times;</span>
+                        <img id="popupImg">
+                        </div>
+                </div>
+                <!-- Trai tim -->
+                <div id="loveBox" class="loveBox">
+
+                    <div id="stars"></div>
+
+                    <div class="heartbox" id="heartbox"></div>
+
+                    <div id="textArea"></div>
+
+                    <div class="player">
+                    <img id="cover" src="anh/image2.webp">
+
+                    <div class="musicInfo">
+                    <div id="songTitle">Love Song</div>
+
+                    <div class="progress">
+                    <div id="progressBar"></div>
+                    </div>
+
+                    </div>
+                    </div>
+
+                    <audio id="music" src="music.mp3"></audio>
+                    <span id="closeLove" class="closeLove">&times;</span>
+                    </div>
+            </div>
+
             </div>  
         </div>      
         <audio id="bgMusic" loop>
@@ -41,7 +184,6 @@
             <span id="musicIcon">🔇</span>
         </div>
         
-    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
