@@ -597,6 +597,12 @@ transition: all 0.3s ease;
   z-index:99;
 }
 
+@media(max-width: 250px) {
+    .gallery-overlay {
+    max-height: 400px;
+    }
+}
+
 /* nút X */
 .close-gallery{
   position:absolute;
