@@ -95,7 +95,7 @@ musicIcon.innerText = '🔇';
 
 // Hoa rơi //
 function createFlowers(){
-    for(let i=0;i<30;i++){
+    for(let i=0;i<10;i++){
     let flower=document.createElement("div");
     flower.className="flower";
     flower.innerHTML="🌸";
@@ -104,13 +104,13 @@ function createFlowers(){
     flower.style.fontSize=(Math.random()*20+15)+"px";
     document.body.appendChild(flower);
 
-    setTimeout(()=>{flower.remove();},10000);
+    setTimeout(()=>{flower.remove();},8000);
     }
 }
 
 function startFlowers(){
     createFlowers();
-    flowerInterval = setInterval(createFlowers,8000);
+    flowerInterval = setInterval(createFlowers,500);
 }
 
 /* DỪNG HOA RƠI */
