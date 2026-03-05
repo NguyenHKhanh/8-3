@@ -293,10 +293,11 @@ progressBar.style.width=percent+"%"
 
 /* STARS */
 
+function openStars(){
+
 for(let i=0;i<100;i++){
 
 let star=document.createElement("div")
-
 star.className="star"
 
 let size=Math.random()*3
@@ -310,6 +311,16 @@ star.style.top=Math.random()*100+"%"
 star.style.setProperty("--duration",(Math.random()*3+2)+"s")
 
 document.body.appendChild(star)
+
+}
+
+}
+
+function closeStars(){
+
+document.querySelectorAll(".star").forEach(star=>{
+star.remove()
+})
 
 }
 
@@ -335,7 +346,14 @@ m.remove()
 
 }
 
-setInterval(meteor,2500)
+function startMeteor(){
+    createFlowers();
+    meteorInterval = setInterval(meteor,2500);
+}
+
+function stopMeteor(){
+    clearInterval(meteorInterval);
+}
 
 
 const openLove = document.getElementById("openLove")
@@ -347,6 +365,8 @@ openLove.onclick = () => {
     stopFlowers();
     music.currentTime=0;
     loveBox.style.display = "flex";
+    startMeteor();
+    openStars();
 }   
 
 closeLove.onclick = () => {
@@ -354,4 +374,6 @@ closeLove.onclick = () => {
     music.pause();   
     startFlowers();
     bgMusic.play();
+    stopMeteor();
+    closeStars();
 }
