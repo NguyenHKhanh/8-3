@@ -586,7 +586,7 @@ transition: all 0.3s ease;
 }
 @media (max-width: 700px) {
   .photo-track img {
-    max-width: 160px;
+    max-width: 140px;
     height: auto;
   }
 }
@@ -903,5 +903,6 @@ background:#1db954;
     cursor:pointer;
     
 }
+
 
 
